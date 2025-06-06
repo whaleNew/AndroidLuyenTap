@@ -34,6 +34,5 @@ public class MainActivity extends AppCompatActivity {
                 edtbmi.setText(String.format("%.1f", bmi));
             }
         });
-
     }
 }
