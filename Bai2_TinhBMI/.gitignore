@@ -1,0 +1,26 @@
+# Android Studio
+.idea/
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# Gradle
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+.DS_Store
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.db
+
+# Signing files
+*.jks
+*.keystore
+*.pem
