@@ -71,8 +71,12 @@ public class MainActivity extends AppCompatActivity {
                     sothich += chkcoding.getText().toString()+"-";
                 // lấy thông tin bổ sung
                 String bosung = edtbosung.getText().toString();
-                String tonghop = hoten+"\n"+cccd+"\n"+bangcap+"\n"+sothich+"\n";
-                tonghop = "-----THÔNG TIN BỔ SUNG-----\n";
+                String tonghop = "";
+                tonghop += "Họ và tên:" + hoten + "\n";
+                tonghop += "CCCD:" + cccd + "\n";
+                tonghop += "Bằng cấp:" + cccd + "\n";
+                tonghop += "Sở thích:" + sothich + "\n";
+                tonghop += "-----THÔNG TIN BỔ SUNG-----\n";
                 tonghop +=bosung+"\n";
                 // tạo dialog và hiển thị thông tin tổng hợp
                 AlertDialog.Builder mydialog = new AlertDialog.Builder(MainActivity.this);
@@ -81,10 +85,10 @@ public class MainActivity extends AppCompatActivity {
                 mydialog.setPositiveButton("ĐÓNG", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        dialog.cancel();
                     }
                 });
-
+                    mydialog.create().show();
             }
 
         });
