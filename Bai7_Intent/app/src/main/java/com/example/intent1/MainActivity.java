@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        // ánh xạ
         btnopen = findViewById(R.id.btnopen);
         btnopen.setOnClickListener(new View.OnClickListener() {
             @Override
